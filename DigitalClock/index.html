@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+            integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    </head>
+    <body>
+       
+        <nav class="navbar navbar-dark bg-dark">
+            <a href="#" navbar-brand>Bootstrap</a>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">
+                            <h3>Digital Clock</h3>
+                        </div>
+                        <div class="card-body">
+                            <h1 id="digital"></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </body>
+    <script>
+
+        setInterval(function(){
+              var ct = new Date().toLocaleTimeString()
+            document.getElementById('digital').innerHTML = ct
+        },1000)
+        //var today_Date = new Date();
+      
+    </script>
+</html>
