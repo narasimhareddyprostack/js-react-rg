@@ -6,8 +6,9 @@ let createEmployee=(emp)=>{
     return new Promise((resolve,reject)=>{
         setTimeout(()=>{
             employees.push(emp)
-            let dbFlag=true 
-            dbFlag? resolve("Emp Data inserted") : reject("Failed")
+            resolve("......")
+           /*  let dbFlag=true 
+            dbFlag? resolve("Emp Data inserted") : reject("Failed") */
         },4000)
     })
 }
@@ -24,7 +25,7 @@ let getEmployees=()=>{
         }
         //document.getElementById('tbody_Data').innerHTML="GM"
         document.getElementById('tbody_Data').innerHTML=rows
-     },2000)
+     },1000)
 }
 
 let execute = async ()=>{
