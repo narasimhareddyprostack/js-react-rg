@@ -1,24 +1,13 @@
-import Header from './components/Header'
-import Landing from './components/Landing'
-import Service from './components/Service'
-import Footer from './components/Footer'
-let App = ()=>{
+import React from 'react'
+import CompA from './propsEx/CompA'
+const App = () => {
+  return (
+    <div>
+      <h1>App component</h1>
 
-
-    return <div>
-       
-         <nav className='navbar navbar-dark bg-dark'>
-            <a href="#" className='navbar-brand'>Bootstrap Example</a>
-         </nav>
-         <hr />
-          <h1>App Componnet</h1>
-        <hr />
-        <Header/>
-        <Landing/>
-        <Service/>
-        <Footer/>
-
+      <CompA/>
     </div>
+  )
 }
 
 export default App
