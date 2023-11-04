@@ -1,7 +1,5 @@
 import React from 'react'
 class CompB extends React.Component{
-
-
     render(){
         return <div>
             <pre>{JSON.stringify(this.props)}</pre>

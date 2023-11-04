@@ -1,12 +1,13 @@
-import React from 'react'
-import CompA from './propsEx/CompA'
+import React, { Fragment } from 'react'
+import Message from './stateEx/Message'
 const App = () => {
   return (
-    <div>
+    <Fragment>
       <h1>App component</h1>
-
-      <CompA/>
-    </div>
+      <hr/>
+      <Message/>
+    
+    </Fragment>
   )
 }
 
