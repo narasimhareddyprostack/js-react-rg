@@ -1,12 +1,14 @@
 import React, { Fragment } from 'react'
-import Message from './stateEx/Message'
+import Navbar from './Navbar/Navbar'
+import Product from './products/Product'
+import Test from './products/Test'
 const App = () => {
   return (
     <Fragment>
-      <h1>App component</h1>
+      <Navbar/>
       <hr/>
-      <Message/>
-    
+     
+    <Product/>
     </Fragment>
   )
 }
