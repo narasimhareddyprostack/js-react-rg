@@ -1,16 +1,13 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import Navbar from './Navbar/Navbar'
-import Message from './Message/Message'
-import Salary from './Message/Salary'
-import Product from './Message/Product'
+import Home from './conditionalEx/Home'
+import Employee from './listRendering/Employee'
 const App = () => {
   return (
-    <Fragment>
+    <div>
       <Navbar/>
-      <hr/>
-     <Product/>
-
-    </Fragment>
+      <Employee/>
+    </div>
   )
 }
 
