@@ -28,7 +28,7 @@ export class User extends Component {
                     <tbody>
                         {
                             users.map((user,index)=>{
-                                return <tr  key={index}>
+                                return <tr key={index}>
                                         <td>{index+1}</td>
                                        <td>{user.login.uuid.substring(32)}</td>
                                        <td>{user.name.first}</td>
