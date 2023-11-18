@@ -1,0 +1,34 @@
+Step 1: install requried packages
+        npm i redux react-redux  @redux-devtools/extension
+
+Step 2: install redux-devtool -crome browser extension 
+https://chromewebstore.google.com/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?pli=1
+
+Step 3:Crate React view(Message.jsx)
+
+Step 4:redux-->message.action.js  
+               message.reducer.js
+               store.js
+
+Step 5: Provide your store to react app 
+
+
+
+What is action?
+action is function, return actionable objects
+
+let gmAction=()=>{
+    return {}
+}
+let gnAction = ()=>{
+    return {}
+}
+
+export {gmAction,gnAction}
+
+
+react view to action?
+How to dispatch an redux action?
+ --uisng useDispatch() hook 
+
+what is actionable object?
