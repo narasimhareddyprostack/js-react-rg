@@ -1,13 +1,16 @@
 import React, { Component } from 'react'
-import Message from './components/Message'
-import Product from './components/Product'
+import Product from './Product/Product'
+import {store} from './redux/store'
+import {Provider} from 'react-redux'
 class App extends Component {
   render() {
     return (
       <div>
-        <h1>App Component</h1>
+        <Provider store={store}>
+        <h3>App Component</h3>
         <hr />
-        <Product/>
+          <Product/>
+        </Provider>
       </div>
     )
   }
