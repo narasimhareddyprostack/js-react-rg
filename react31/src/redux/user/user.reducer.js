@@ -1,4 +1,5 @@
-let userReducer = (state,action)=>{
+import {USER_REQ,USER_SUCCESS,USER_FAILURE} from './user.action'
+let userReducer = (state={},action)=>{
     switch(action.type){
             case USER_REQ:
                 return {}

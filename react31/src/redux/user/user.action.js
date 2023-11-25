@@ -3,6 +3,7 @@ import Axios from 'axios'
 let USER_REQ='USER_REQ'
 let USER_SUCCESS='USER_SUCCESS'
 let USER_FAILURE='USER_FAILURE'
+
 let user_Req_Action = ()=>{
     return { type:USER_REQ}
 }
@@ -17,6 +18,7 @@ let user_Action=()=>{
         dispatch(user_Req_Action())
         Axios.get('https://jsonplaceholder.typicode.com/users')
         .then((res)=>{
+                console.log(res.data)
               dispatch(user_Success_Action(res.data))
         })
         .catch((err)=>{
@@ -27,3 +29,5 @@ let user_Action=()=>{
 
     }
 }
+
+export {USER_REQ,USER_SUCCESS,USER_FAILURE,user_Action}
