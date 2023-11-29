@@ -4,6 +4,8 @@ import Navbar from './Navbar/Navbar'
 import Home from './User/Home'
 import Contact from './User/Contact'
 import User from './User/User'
+import RegiForm from './HookEx/RegiForm'
+import Fact from './HookEx/Fact'
 import {store} from './redux/store'
 import {Provider} from 'react-redux'
 class App extends Component {
@@ -17,6 +19,8 @@ class App extends Component {
                     <Route path="/home" element={<Home/>} />
                     <Route path="/user" element={<User/>} />
                     <Route path="/contact" element={<Contact/>} />
+                    <Route path="/refhook" element={<RegiForm/>} />
+                    <Route path="/memo" element={<Fact/>} />
                 </Routes>
            </Router>
            </Provider>
