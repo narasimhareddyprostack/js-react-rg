@@ -7,10 +7,10 @@ class Navbar extends Component {
       <div className='ml-auto'>
         <ul className='navbar-nav'>
             <li><Link className='nav-link' to="/home">Home</Link></li>
-            <li><Link className='nav-link' to="/products">Products</Link></li>
-            <li><Link className='nav-link' to="/admin">Admin</Link></li>
-            <li><Link className='nav-link' to="/create">Create</Link></li>
-            
+            <li><Link  className='nav-link' to="/contact">Contact</Link></li>
+            <li><Link className='nav-link' to="/user">Users</Link></li>
+            <li><Link className='nav-link' to="/refhook">Use Ref Ex</Link></li>
+            <li><Link className='nav-link' to="/memo">Usememo Ex</Link></li>
         </ul>
       </div>
     </nav>
